@@ -6,8 +6,28 @@ import theme from '../src/pf-theme';
 
 const Foo = () => (
   <ThemeProvider theme={theme}>
-    <Button color="primary" variant="contained" onClick={console.log}>
+    <Button variant="primary" onClick={console.log}>
       Primary
+    </Button>
+    &nbsp;
+    <Button variant="secondary" onClick={console.log}>
+      Secondary
+    </Button>
+    &nbsp;
+    <Button variant="tertiary" onClick={console.log}>
+      Tertiary
+    </Button>
+    &nbsp;
+    <Button variant="danger" onClick={console.log}>
+      Danger
+    </Button>
+    &nbsp;
+    <Button variant="control" onClick={console.log}>
+      Control
+    </Button>
+    &nbsp;
+    <Button variant="link" onClick={console.log}>
+      Link button
     </Button>
   </ThemeProvider>
 );
